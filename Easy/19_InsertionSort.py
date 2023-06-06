@@ -12,8 +12,7 @@ def swap(arr, p1,p2):
     temp = p1
     p1 = p2
     p2=temp
-    return arr;
-
+    return arr
 
 
 ar = [8,5,2,9,5,6,3];
