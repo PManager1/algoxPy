@@ -11,22 +11,31 @@
 
 def classPhoto(redAr,blueAr):
     print("red and blue before sorting",  redAr, blueAr )
-    # find which array have highest the largest height from two arrays. do it by sorting of each arrays.
-    # redAr = rredAr.sort(reverse=True)
-    # blueAr = bblueAr.sort(reverse=True)
-
     redAr.sort(reverse=True)
     blueAr.sort(reverse=True)
 
     print("sorted red and blue ",  redAr, blueAr )
-    # print("first element of Red  ",  redAr[0] )
-    # if ( r)
-    pass
+    if ( redAr[0] > blueAr[0]) :
+        back = redAr;
+        ahead = blueAr;
+    else:
+        back = blueAr;
+        ahead = redAr;
+
+    for i, val in enumerate(back):
+        print("back [i],ahead[i]",back [i],ahead[i])
+        if( back [i] > ahead[i] ): continue
+        else:
+            return False;
+    return True;
+
+
 
 
 
 
 redShirt = [5,8,1,3,4];
-blueShirt = [6,4,2,4,5];
-classPhoto(redShirt,blueShirt)
+blueShirt = [6,9,2,4,5];
+res = classPhoto(redShirt,blueShirt)
+print("res = ", res);
 # Very easy.
