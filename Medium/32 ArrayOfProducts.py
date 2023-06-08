@@ -26,3 +26,6 @@ def arrayOfProucts(ar):
 
 inputArr = [5,1,4,2]
 print("arrayOfProucts(inputArr) = ", arrayOfProucts(inputArr))
+
+
+# Now do it by creatinga  left and right array.  Its pretty easy once you create the two arrays.

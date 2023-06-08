@@ -6,13 +6,22 @@
 # rows shoudl have same no of studetns.
 # students in the front row must be shorter than the students at the back. .
 #
-# Questoin; can we achieve this objective ?
+# Questoin; can we achieve this objective ?  True or False
 # 739
 
-def classPhoto(red,blue):
+def classPhoto(redAr,blueAr):
+    print("red and blue before sorting",  redAr, blueAr )
     # find which array have highest the largest height from two arrays. do it by sorting of each arrays.
-    return 0
+    # redAr = rredAr.sort(reverse=True)
+    # blueAr = bblueAr.sort(reverse=True)
 
+    redAr.sort(reverse=True)
+    blueAr.sort(reverse=True)
+
+    print("sorted red and blue ",  redAr, blueAr )
+    # print("first element of Red  ",  redAr[0] )
+    # if ( r)
+    pass
 
 
 
