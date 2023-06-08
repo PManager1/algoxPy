@@ -24,7 +24,7 @@ optionalParameterFn( x=1);
 
 # **kwargs  we accept any no of keyword arguments.
 def newFn(*args, **kwargs ):  #y isnt' required to pass any value.
-    print("args=",args, kwargs["x"])
+    print("args=",args, "kwargs=", kwargs," kwargs[x =",  kwargs["x"])
     pass
 
-newFn( x=1, y=3 );
+newFn( 1,2,3, x=1, y=3 );
