@@ -1,4 +1,4 @@
-# two input array has height of studens wth red shirts and secnd with blue shirts.
+# Two input array has height of studens wth red shirts and secnd with blue shirts.
 # there wlll be equal no of studens wering red and blue shirs.
 # all heights are positive
 #Constratins of the phonto:   all red and blue studnes must be in the same row.
@@ -10,6 +10,7 @@
 # 739
 
 def classPhoto(red,blue):
+    # find which array have highest the largest height from two arrays. do it by sorting of each arrays.
     return 0
 
 
