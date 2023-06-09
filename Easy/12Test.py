@@ -15,21 +15,12 @@
 
 
 def findFastest(rred, bblue, MxOrMn):
-    # arr2 = arr1.copy()
-    # red = red.sort(reverse=True)
-    rred.sort(reverse=True)
-    red = rred.copy()
-    print("20-red=", red);
-
+    red = rred.sort(reverse=True).copy();
+    print("20-red=", red)
     if MxOrMn:
-        bblue.sort()
-        blue = bblue.copy();
-        print("27-blue=", blue);
+        blue = bblue.sort().copy();
     else:
-        bblue.sort(reverse=True)
-        blue = bblue.copy();
-        print("31-blue=", blue);
-
+        blue = bblue.sort(reverse=True).copy();
 
     print(red); print(blue); print(MxOrMn)
     print( max(5,2) )
@@ -47,15 +38,8 @@ def findFastest(rred, bblue, MxOrMn):
 
 redShirtSpeeds = [5, 5, 3, 9,2]
 blueShirtSpeeds =[3, 6, 7, 2,1]
-
-# copiedAar = redShirtSpeeds.copy();
-# print("43-copiedAar =", copiedAar)
-# redShirtSpeeds.pop()
-# print("45-copiedAar =", copiedAar)
-
 fastest = True  # total maximum speed of all tandem bicycles being ridden
-               # Max [5,6,7,9,2] = total = 29
-               # Min [3,5,3,2,1] = total = 7
+# Max [5,6,7,9,2] = total = 29
+# Min [3,5,3,2,1] = total = 7
 res = findFastest(redShirtSpeeds,blueShirtSpeeds, True )
-# res = findFastest(redShirtSpeeds,blueShirtSpeeds, False )
 print("40-res =", res);

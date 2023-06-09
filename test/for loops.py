@@ -1,13 +1,15 @@
+# for i, val in enumerate(backArr):
+#     print("back [i],ahead[i]",back [i],ahead[i])
+#     if( back [i] > ahead[i] ): continue
+#     else:
+#         return False;
+
+
 # to access the index
 xs = [1,2,3,4,5]
 
 for idx, x in enumerate(xs):
     print(idx, x)
-
-
-for idx, x in enumerate(xs):
-    print(idx, x)
-
 
 # NExt
 
