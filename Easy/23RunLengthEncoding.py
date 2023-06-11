@@ -6,11 +6,13 @@
 # If a sequence contains more than 9 consecutive, identical characters, we first encode 9 characters,
 # then the remaining ones.
 # For instance, AAAAAAAAAA (10 As) will be encode as 9A1A.
+# 9A4A2B4C2D
+def  runLengthEncoding(st):
+    # print(st)
+    for idx, x in enumerate(st):
+        print(idx, x)
 
-def  runLengthEncoding(string):
-    return
 
 
-
-st = "AAAAAAAAAA"
+st = "AAAAAAAAAAAAABBCCCCDD"
 runLengthEncoding(st)
