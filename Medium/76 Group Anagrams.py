@@ -49,15 +49,16 @@ from collections import defaultdict
 test_list = ['lump', 'eat',  'me',  'tea', 'em', 'plum']
 
 # printing original list
-print("The original list : " + str(test_list))
+print("The original list : " + str(test_list))   # print("The original list : ",  test_list)
 
-# using defaultdict() + sorted() + values()
 # Grouping Anagrams
-temp = defaultdict(list)
-
+temp = defaultdict(list)   # temp = {}
+# print("57 temp : " , temp)
 for ele in test_list:
-    temp[str(sorted(ele))].append(ele)
+    # print("===> 61 ele : " , ele, "61 sorted(ele) : ", sorted(ele))
+    temp[str(sorted(ele))].append(ele) # this is the IF statement
+    print("===> 63 temp : ", temp)
 res = list(temp.values())
 
 # print result
-print("The grouped Anagrams : " + str(res))
+print("The grouped Anagrams : " , str(res))
