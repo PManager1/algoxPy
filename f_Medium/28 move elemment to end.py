@@ -19,7 +19,7 @@ def moveElement(ar,toMove):
     Left =0; Right = len(ar)-1
     while Left< Right:
 
-        while ar[Right] == toMove:
+        while Left < Right and ar[Right] == toMove:
             Right -=1        # Keep moving the pointer to the Left until U keep finding 2.
             print("24-ar(Right) == toMove Left=", Left, "ar[Left]=", ar[Left], "Right=", Right, "ar[Right]=", ar[Right] )
 
