@@ -20,19 +20,15 @@ def moveElement(ar,toMove):
     while Left< Right:
 
         while Left < Right and ar[Right] == toMove:
-            Right -=1        # Keep moving the pointer to the Left until U keep finding 2.
+            Right -=1        # Keep moving the pointer to the Left until U find number that's not 2.
             print("24-ar(Right) == toMove Left=", Left, "ar[Left]=", ar[Left], "Right=", Right, "ar[Right]=", ar[Right] )
 
         if ar[Left] == toMove: # When the left find the 2 you swap.
             print("28: Calling swap()  Left =", Left, "Right = ", Right)
             swap(ar,Left,Right)
-            Left += 1;
-        if ar[Left] != toMove:
-            print("31-ar(Left) != 2")
-            Left = Left+1;
+        Left += 1;  #keep moving the pointer to Right no matter what.
 
         print("34- Left=", Left, "ar[Left]=", ar[Left], "Right=", Right, "ar[Right]=", ar[Right], "ar=", ar )
-
 
 
 

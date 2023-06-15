@@ -9,8 +9,27 @@
 # 9A4A2B4C2D
 def  runLengthEncoding(st):
     # print(st)
-    for idx, x in enumerate(st):
-        print(idx, x)
+
+    currentCh = "";
+    currentMax=0;
+    chars = []
+    for i, val in enumerate(st):
+        print(i, val)
+        if(st[i] == st[i+1]):
+            print("equal = st[i]=", st[i], i , i+1)
+            currentCh = st[i];
+            currentMax +=1
+        else:
+            print("23-currentMax =", currentMax, "currentCh=", currentCh )
+            # print("24-list=", list)
+            list = str(currentMax) + currentCh
+            print("26-list=", list)
+            chars.append(list)
+            currentMax = 0;
+            currentCh= st[i+1]
+            print("30-chars=", chars)
+
+
 # count the number of AAAA s
 # Do in notebook first
 
