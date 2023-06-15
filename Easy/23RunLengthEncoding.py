@@ -11,7 +11,8 @@ def  runLengthEncoding(st):
     # print(st)
     for idx, x in enumerate(st):
         print(idx, x)
-
+# count the number of AAAA s
+# Do in notebook first
 
 
 st = "AAAAAAAAAAAAABBCCCCDD"

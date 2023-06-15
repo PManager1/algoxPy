@@ -8,17 +8,29 @@
 #input = [2,1,2,2,2,3,4,2]; // 2
 #out = [1,3,4,2,2,2,2,2];  we dont care abt the order of the other numbers, only the 2s shoudl be at the last.
 
-def swap(a,b):
-    pass
+def swap(ar,a,b):
+    print('swap fn called')
+    ar[a], ar[b] = ar[b], ar[a]
+    print('14-after swap called ar=', ar)
+    return
 
 
-def moveElement(ar,num):
-    Left, Right = 0, len(ar)
+def moveElement(ar,toMove):
+    Left =0; Right = len(ar)-1
     while Left< Right:
-        if ar(Left) == 2
 
-        start += 1
-        end -= 1
+        while ar[Right] == toMove:
+            print("22-ar(Right) == toMove Right=", Right)
+            Right -=1
+            print("24-ar(Right) == toMove Right=", Right, "ar[Right]=", ar[Right] )
+        if ar[Left] == toMove:
+            print("swap()")
+            swap(ar,Left,Right)
+            Left = Left+1;
+        if ar[Left] != toMove:
+            print("ar(Left) != 2")
+            Left = Left+1;
+
 
 
 
