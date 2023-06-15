@@ -14,5 +14,14 @@
 #  You cant sort the array
 
 # insert all nos in the set  with : True as key value.
-# now start iterting as you explore the nos, you put a flag false next to it.
+# start iteraritn from left to right as you explore the nos,
+
+# start with first no which is 1 & check if the nos smaller than 1 are in the table. i.e 0,  first go backwards & then forwards.
+
+# As the nos comem in the range, you put a flag false next to it.
+
+
 # [1,11,3,0,15,5,2,4,10,7,12,6]
+
+
+15:30
