@@ -9,9 +9,9 @@
 #out = [1,3,4,2,2,2,2,2];  we dont care abt the order of the other numbers, only the 2s shoudl be at the last.
 
 def swap(ar,a,b):
-    print('swap fn called')
+    print("swap fn called Left =", a, "Right = ", b,  ar)
     ar[a], ar[b] = ar[b], ar[a]
-    print('14-after swap called ar=', ar)
+    print("14-after swap  ar                =",  ar)
     return
 
 
@@ -20,17 +20,18 @@ def moveElement(ar,toMove):
     while Left< Right:
 
         while ar[Right] == toMove:
-            print("22-ar(Right) == toMove Right=", Right)
-            Right -=1
-            print("24-ar(Right) == toMove Right=", Right, "ar[Right]=", ar[Right] )
-        if ar[Left] == toMove:
-            print("swap()")
+            Right -=1        # Keep moving the pointer to the Left until U keep finding 2.
+            print("24-ar(Right) == toMove Left=", Left, "ar[Left]=", ar[Left], "Right=", Right, "ar[Right]=", ar[Right] )
+
+        if ar[Left] == toMove: # When the left find the 2 you swap.
+            print("28: Calling swap()  Left =", Left, "Right = ", Right)
             swap(ar,Left,Right)
-            Left = Left+1;
+            Left += 1;
         if ar[Left] != toMove:
-            print("ar(Left) != 2")
+            print("31-ar(Left) != 2")
             Left = Left+1;
 
+        print("34- Left=", Left, "ar[Left]=", ar[Left], "Right=", Right, "ar[Right]=", ar[Right], "ar=", ar )
 
 
 
