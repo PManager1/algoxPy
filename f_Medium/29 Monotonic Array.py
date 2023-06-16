@@ -36,6 +36,10 @@ def checkDescArr(ar):
 
 
 # Condition if the first two elements are same ?  Use for loop to Compute the direction here first, it has to has a direction.
+#  You do this by adding an iff statement with if ar[i] == ar[i+1]:  keep continuing it., if it reaches last, then return false.
+
+# Try to do it with just one for loop.  first get the direction & then try to break the direction
+
 def Ismonotonic(ar):
     print(ar)
     i=0
